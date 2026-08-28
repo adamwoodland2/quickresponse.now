@@ -1,0 +1,18 @@
+# quickresponse.now
+
+> Free QR code generator that runs entirely in the browser. No account, no expiry, no watermark, no adverts. Nothing the user types is uploaded or stored; the page works offline.
+
+quickresponse.now makes QR codes for: web links, plain text, Wi-Fi networks (scan to join), contact cards (vCard), email (pre-filled to/subject/body), SMS (pre-filled number and message), phone numbers (tap to dial), and map locations (latitude/longitude).
+
+Codes never expire because they encode the content directly — there is no redirect server in between. Output is SVG (for print, any size) or PNG (512–4096 px), with copy-to-clipboard and a print layout. Styling options: colour, background, module shape (square, rounded, dots), and error-correction level L/M/Q/H. A "Will it scan?" check reports contrast ratio, inverted-colour risk, and the recommended minimum print size.
+
+Technical: single static page, MIT-licensed, installable PWA. The encoder is qrcode-generator by Kazuhiko Arase (MIT). No cookies, no analytics scripts, no server-side processing.
+
+## Links
+
+- [Generator](https://quickresponse.now/): the app itself
+- [Link a pre-filled code](https://quickresponse.now/?url=https://example.com): `?url=` or `?text=` query parameters prefill the generator
+
+## Contact
+
+- adam@quickresponse.now

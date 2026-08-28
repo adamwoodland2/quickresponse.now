@@ -1,0 +1,20 @@
+{
+	"id": "/",
+	"lang": "en-GB",
+	"dir": "ltr",
+	"categories": ["utilities", "productivity"],
+	"name": "quickresponse.now — QR code generator",
+	"short_name": "QR now",
+	"description": "Free QR codes for links, Wi-Fi, contacts, email, SMS, phone and location. No account, no expiry, nothing uploaded.",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"theme_color": "#ffffff",
+	"icons": [
+		{ "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+		{ "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+		{ "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+	]
+}

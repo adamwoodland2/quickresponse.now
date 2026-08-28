@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free QR Code Generator — No Sign-up, No Expiry | quickresponse.now</title>
+  <meta name="description" content="Make QR codes for links, text, Wi-Fi, contact cards, email, SMS, phone numbers and locations. Free, instant, no account, codes never expire. Everything runs in your browser — nothing you type is uploaded." />
+  <meta name="keywords" content="qr code generator, free qr code, qr code maker, wifi qr code, vcard qr code, qr code no expiry, qr code svg, qr code png, private qr code generator" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" />
+  <link rel="canonical" href="https://quickresponse.now/" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://quickresponse.now/" />
+  <meta property="og:site_name"   content="quickresponse.now" />
+  <meta property="og:title"       content="Free QR code generator — no sign-up, no expiry, nothing uploaded" />
+  <meta property="og:description" content="Links, text, Wi-Fi, contacts, email, SMS, phone, location. Runs in your browser, works offline, codes never expire." />
+  <meta property="og:image"       content="https://quickresponse.now/og-image.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"   content="quickresponse.now — a QR code inside a camera viewfinder" />
+  <meta property="og:locale"      content="en_GB" />
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Free QR code generator — no sign-up, no expiry, nothing uploaded" />
+  <meta name="twitter:description" content="Links, text, Wi-Fi, contacts, email, SMS, phone, location. Runs in your browser, works offline, codes never expire." />
+  <meta name="twitter:image"       content="https://quickresponse.now/og-image.png" />
+
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#101012" media="(prefers-color-scheme: dark)" />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "quickresponse.now — QR code generator",
+    "url": "https://quickresponse.now/",
+    "description": "Free QR code generator for links, text, Wi-Fi, contact cards, email, SMS, phone numbers and locations. No account, no expiry — runs entirely in the browser and nothing you type is uploaded.",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "browserRequirements": "Requires JavaScript",
+    "inLanguage": "en-GB",
+    "isAccessibleForFree": true,
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "GBP" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do QR codes expire?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. A QR code is just a picture that encodes your text or link directly, so there is nothing to expire. Sites that say a free code will stop working route it through their own redirect server so they can charge you later. Codes made on quickresponse.now point straight at your content." }
+      },
+      {
+        "@type": "Question",
+        "name": "Is what I type uploaded anywhere?",
+        "acceptedAnswer": { "@type": "Answer", "text": "No. The code is generated in your browser. What you type is never sent to a server or stored, and the page keeps working with your internet connection switched off." }
+      },
+      {
+        "@type": "Question",
+        "name": "How big should I print a QR code, and which file should I use?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Phones scan comfortably from about ten times the code's width: a 2 cm code from 20 cm, a 30 cm code from across a room. Keep the clear margin around it. Use SVG for print (it scales without blurring) and PNG for screens and documents." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="/">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-name">quickresponse<span class="brand-tld">.now</span></span>
+  </a>
+  <h1 class="tagline">Free QR code generator — no sign‑up, no expiry, nothing you type leaves your browser.</h1>
+</header>
+
+<main class="bench">
+
+  <section class="controls" aria-label="What to encode">
+    <fieldset class="types">
+      <legend>Make a code for</legend>
+      <label><input type="radio" name="type" value="text" checked /><span>Link or text</span></label>
+      <label><input type="radio" name="type" value="wifi" /><span>Wi‑Fi</span></label>
+      <label><input type="radio" name="type" value="contact" /><span>Contact</span></label>
+      <label><input type="radio" name="type" value="email" /><span>Email</span></label>
+      <label><input type="radio" name="type" value="sms" /><span>SMS</span></label>
+      <label><input type="radio" name="type" value="phone" /><span>Phone</span></label>
+      <label><input type="radio" name="type" value="geo" /><span>Location</span></label>
+    </fieldset>
+
+    <form class="fields-wrap" id="fields" autocomplete="off">
+
+      <div class="fields" data-type="text">
+        <label class="field">
+          <span class="field-label">Link or text</span>
+          <textarea name="text" rows="3" placeholder="https://example.com/menu — or any text" spellcheck="false"></textarea>
+        </label>
+        <p class="hint" id="textHint">Paste a web address and it opens as a link. Anything else is shown as text.</p>
+      </div>
+
+      <div class="fields" data-type="wifi" hidden>
+        <label class="field">
+          <span class="field-label">Network name</span>
+          <input type="text" name="ssid" placeholder="MyHomeWiFi" spellcheck="false" />
+        </label>
+        <label class="field">
+          <span class="field-label">Password</span>
+          <input type="text" name="password" placeholder="Leave blank for an open network" spellcheck="false" />
+        </label>
+        <div class="row">
+          <label class="field">
+            <span class="field-label">Security</span>
+            <select name="encryption">
+              <option value="WPA" selected>WPA / WPA2 / WPA3</option>
+              <option value="WEP">WEP</option>
+              <option value="nopass">None (open)</option>
+            </select>
+          </label>
+          <label class="check">
+            <input type="checkbox" name="hidden" />
+            <span>Hidden network</span>
+          </label>
+        </div>
+        <p class="hint">Scanning joins the network — no typing the password.</p>
+      </div>
+
+      <div class="fields" data-type="contact" hidden>
+        <div class="row">
+          <label class="field"><span class="field-label">First name</span><input type="text" name="first" /></label>
+          <label class="field"><span class="field-label">Last name</span><input type="text" name="last" /></label>
+        </div>
+        <div class="row">
+          <label class="field"><span class="field-label">Phone</span><input type="tel" name="cphone" inputmode="tel" placeholder="+61 400 000 000" /></label>
+          <label class="field"><span class="field-label">Email</span><input type="email" name="cemail" inputmode="email" /></label>
+        </div>
+        <div class="row">
+          <label class="field"><span class="field-label">Company</span><input type="text" name="org" /></label>
+          <label class="field"><span class="field-label">Job title</span><input type="text" name="title" /></label>
+        </div>
+        <label class="field"><span class="field-label">Website</span><input type="url" name="curl" inputmode="url" placeholder="https://" spellcheck="false" /></label>
+        <label class="field"><span class="field-label">Address</span><input type="text" name="adr" placeholder="Street, city, postcode, country" /></label>
+        <p class="hint">Scanning offers to save the contact.</p>
+      </div>
+
+      <div class="fields" data-type="email" hidden>
+        <label class="field"><span class="field-label">To</span><input type="email" name="to" inputmode="email" placeholder="hello@example.com" spellcheck="false" /></label>
+        <label class="field"><span class="field-label">Subject</span><input type="text" name="subject" /></label>
+        <label class="field"><span class="field-label">Message</span><textarea name="body" rows="3"></textarea></label>
+        <p class="hint">Opens a new email with these filled in.</p>
+      </div>
+
+      <div class="fields" data-type="sms" hidden>
+        <label class="field"><span class="field-label">Phone number</span><input type="tel" name="smsnum" inputmode="tel" placeholder="+61 400 000 000" /></label>
+        <label class="field"><span class="field-label">Message</span><textarea name="smsbody" rows="3"></textarea></label>
+        <p class="hint">Opens a new text message with these filled in.</p>
+      </div>
+
+      <div class="fields" data-type="phone" hidden>
+        <label class="field"><span class="field-label">Phone number</span><input type="tel" name="phone" inputmode="tel" placeholder="+61 400 000 000" /></label>
+        <p class="hint">Offers to dial the number. Include the country code so it works abroad.</p>
+      </div>
+
+      <div class="fields" data-type="geo" hidden>
+        <div class="row">
+          <label class="field"><span class="field-label">Latitude</span><input type="text" name="lat" inputmode="decimal" placeholder="-31.9523" spellcheck="false" /></label>
+          <label class="field"><span class="field-label">Longitude</span><input type="text" name="lng" inputmode="decimal" placeholder="115.8613" spellcheck="false" /></label>
+        </div>
+        <p class="hint">Opens the spot in the phone's maps app. In Google Maps, right-click a place to copy its coordinates.</p>
+      </div>
+
+      <details class="style" id="style">
+        <summary>Style</summary>
+        <div class="style-body">
+          <div class="row">
+            <label class="field colour">
+              <span class="field-label">Code colour</span>
+              <span class="colour-well"><input type="color" name="fg" value="#0b0b0c" /><output id="fgOut">#0b0b0c</output></span>
+            </label>
+            <label class="field colour">
+              <span class="field-label">Background</span>
+              <span class="colour-well"><input type="color" name="bg" value="#ffffff" /><output id="bgOut">#ffffff</output></span>
+            </label>
+          </div>
+          <div class="swatches" role="group" aria-label="Colour presets">
+            <button type="button" class="swatch" data-c="#0b0b0c" aria-label="Black"></button>
+            <button type="button" class="swatch" data-c="#1f2a44" aria-label="Navy"></button>
+            <button type="button" class="swatch" data-c="#14532d" aria-label="Forest"></button>
+            <button type="button" class="swatch" data-c="#7f1d1d" aria-label="Maroon"></button>
+            <button type="button" class="swatch" data-c="#4c1d95" aria-label="Violet"></button>
+            <button type="button" class="swatch" data-c="#0c4a6e" aria-label="Petrol"></button>
+            <button type="button" class="swap" id="swap">Swap</button>
+          </div>
+
+          <div class="row">
+            <fieldset class="seg">
+              <legend>Shape</legend>
+              <label><input type="radio" name="shape" value="square" checked /><span>Square</span></label>
+              <label><input type="radio" name="shape" value="rounded" /><span>Rounded</span></label>
+              <label><input type="radio" name="shape" value="dots" /><span>Dots</span></label>
+            </fieldset>
+            <label class="field">
+              <span class="field-label">Damage tolerance</span>
+              <select name="ecc">
+                <option value="L">Low — 7%, smallest code</option>
+                <option value="M" selected>Standard — 15%</option>
+                <option value="Q">High — 25%</option>
+                <option value="H">Highest — 30%, for small or rough prints</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </details>
+    </form>
+  </section>
+
+  <section class="preview" aria-label="Your QR code">
+    <div class="viewfinder" id="viewfinder">
+      <span class="vf tl" aria-hidden="true"></span><span class="vf tr" aria-hidden="true"></span>
+      <span class="vf bl" aria-hidden="true"></span><span class="vf br" aria-hidden="true"></span>
+      <div class="code" id="code" role="img" aria-label="QR code preview"></div>
+    </div>
+    <p class="sample-note" id="sampleNote">Sample code — add your content to replace it.</p>
+
+    <ul class="health" id="health" aria-label="Will it scan?"></ul>
+
+    <div class="actions">
+      <button type="button" class="btn primary" id="dlSvg">Download SVG</button>
+      <span class="btn-split">
+        <button type="button" class="btn" id="dlPng">Download PNG</button>
+        <select id="pngSize" aria-label="PNG size in pixels">
+          <option value="512">512 px</option>
+          <option value="1024" selected>1024 px</option>
+          <option value="2048">2048 px</option>
+          <option value="4096">4096 px</option>
+        </select>
+      </span>
+      <button type="button" class="btn" id="copyPng">Copy image</button>
+      <button type="button" class="btn" id="printBtn">Print</button>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </section>
+
+</main>
+
+<section class="encode">
+  <h2>What you can encode</h2>
+  <ul>
+    <li><h3>Link QR code</h3><p>Opens a web page — a menu, a form, a video, your booking page.</p></li>
+    <li><h3>Text QR code</h3><p>Shows a message, a serial number, a reference — anything up to a few thousand characters.</p></li>
+    <li><h3>Wi‑Fi QR code</h3><p>Guests scan to join your network without typing the password. Works with iPhone and Android cameras.</p></li>
+    <li><h3>Contact (vCard) QR code</h3><p>Saves your name, number, email and company to their phone in one tap — a business card that never runs out.</p></li>
+    <li><h3>Email QR code</h3><p>Opens a new email to you with the subject and message already filled in.</p></li>
+    <li><h3>SMS QR code</h3><p>Opens a text message to a number with the wording ready to send.</p></li>
+    <li><h3>Phone QR code</h3><p>Offers to dial a number — for flyers, vans and shop windows.</p></li>
+    <li><h3>Location QR code</h3><p>Opens a pin in the phone's maps app from a latitude and longitude.</p></li>
+  </ul>
+</section>
+
+<section class="about">
+  <div>
+    <h2>Why is this free?</h2>
+    <p>A QR code is just a picture — the squares <em>are</em> your link or text. There is no server in between, so nothing to host, nothing to expire, nothing to charge for. Sites whose "free" codes stop working after a week route them through their own redirect; that is how they switch them off. Codes made here point straight at your content.</p>
+  </div>
+  <div>
+    <h2>What happens to what I type?</h2>
+    <p>Nothing. The code is built on your device, in this page. What you type is never sent anywhere or stored — load the page, switch off your connection, and it still works. Only your style choices are remembered, in your own browser.</p>
+  </div>
+  <div>
+    <h2>Printing tips</h2>
+    <p>Phones scan from about ten times the code's width: a 2 cm code from 20 cm, a 30 cm code from across a room. Keep the clear border — it is part of the code. Use <strong>SVG</strong> for anything printed and <strong>PNG</strong> for screens and documents. Raise the damage tolerance for small, laminated or outdoor prints.</p>
+  </div>
+</section>
+
+<footer>
+  <p>No accounts, no adverts, no expiry. Open source under the MIT licence; encoder by <a href="https://github.com/kazuhikoarase/qrcode-generator">Kazuhiko Arase</a>.</p>
+  <p><a href="mailto:adam@quickresponse.now">adam@quickresponse.now</a></p>
+</footer>
+
+<script src="qrcode.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
