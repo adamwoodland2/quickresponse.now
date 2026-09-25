@@ -13,6 +13,11 @@ Technical: single static page, MIT-licensed, installable PWA. The encoder is qrc
 - [Generator](https://quickresponse.now/): the app itself
 - [Link a pre-filled code](https://quickresponse.now/?url=https://example.com): `?url=` or `?text=` query parameters prefill the generator
 
+## Related
+
+- [Adam's Arcade](https://games.adamwoodland.com/): all of the author's free browser games and tools
+- [Adam Woodland](https://adamwoodland.com/): the author, an OT/ICS cybersecurity consultant; this site is a side project
+
 ## Contact
 
 - adam@quickresponse.now

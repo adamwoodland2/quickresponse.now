@@ -10,7 +10,7 @@
 //    display fonts fall back to system sans-serif.
 //  - Bump CACHE on deploys that change any precached file (activate deletes
 //    every other cache version).
-const CACHE = 'qrn-v2';
+const CACHE = 'qrn-v3';
 const CORE = [
 	'/',
 	'/index.html',
